@@ -33,6 +33,10 @@
 
         var options = $.extend(defaults, opts);
 
+        $.fn.characterCounter.reset = function() {
+            $(this).trigger('characterCounter:update');
+        };
+
         return this.each(function() {
             var html5len = $(this).attr('maxlength');
             if (typeof html5len !== typeof undefined && html5len !== false) {
@@ -124,6 +128,9 @@
                 .on("paste", function () {
                     var self = this;
                     setTimeout(function () { checkCount(self); }, 0);
+                })
+                .on("characterCounter:update", function() {
+                    checkCount(element);
                 });
         }
     };
