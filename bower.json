@@ -1,0 +1,24 @@
+{
+  "name": "jquery-character-counter",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bmartel/jquery-character-counter",
+  "authors": [
+    "bmartel <brandonmartel@gmail.com>"
+  ],
+  "description": "A jquery powered input field counter.",
+  "main": "jquery.charactercounter.js",
+  "keywords": [
+    "jquery",
+    "bower",
+    "character",
+    "counter"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
